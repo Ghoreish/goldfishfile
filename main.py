@@ -43,6 +43,7 @@ while True:
             continue
         send(file,s)
         print(file," DONE!")
+        break
     elif c=='2':
         try:
             ip=input("ip: ")
@@ -52,3 +53,5 @@ while True:
             continue
         s.connect((ip,port))
         get(s)
+        break
+print("GOODBYE ;)")
